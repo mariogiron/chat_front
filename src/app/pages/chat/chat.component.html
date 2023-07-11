@@ -1,0 +1,29 @@
+<div class="chat">
+    <h1>New Whatsapp Web</h1>
+    <h3>clientes conectados: {{numClientes}}</h3>
+    <div class="sonido">
+        <i>{{ audioOn ? '🔊' : '🔇'}}</i><input type="checkbox" [(ngModel)]="audioOn">
+    </div>
+    <div class="mensajes" #divMensajes>
+        <ul>
+            <li *ngFor="let msg of mensajes" [ngClass]="{ 
+                propio: (msg.socket_id === socket.id)  
+            }">
+                <strong>{{msg.usuario}}</strong>: {{msg.mensaje}}
+            </li>
+        </ul>
+    </div>
+    <div class="formulario">
+        <div>
+            <label>Usuario</label>
+            <input type="text" [(ngModel)]="data.usuario">
+        </div>
+        <div>
+            <label>Mensaje</label>
+            <input type="text" [(ngModel)]="data.mensaje">
+        </div>
+        <div>
+            <button (click)="onClick()">Enviar</button>
+        </div>
+    </div>
+</div>

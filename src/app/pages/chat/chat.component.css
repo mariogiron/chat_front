@@ -1,0 +1,82 @@
+ @import url(https://fonts.googleapis.com/css?family=Freehand:regular);
+ @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+ @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+ .chat {
+     border: 4px solid lightseagreen;
+     width: 70vw;
+     height: 70vh;
+     position: relative;
+     color: black;
+ }
+
+ .chat h1 {
+     position: absolute;
+     top: -55px;
+     left: 30px;
+     background-color: lightseagreen;
+     padding: 10px 20px;
+     font-family: 'Montserrat Alternates';
+ }
+
+ .chat h3 {
+     position: absolute;
+     top: -45px;
+     right: 20px;
+     background-color: lightseagreen;
+     padding: 10px 20px;
+     font-family: Roboto;
+ }
+
+ .sonido {
+     position: absolute;
+     top: -65;
+     right: 20px;
+ }
+
+ .mensajes {
+     height: 90%;
+     overflow-y: scroll;
+ }
+
+ .mensajes ul {
+     list-style: none;
+     padding: 40px;
+     font-size: 20px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .mensajes ul li {
+     margin: 10px 0;
+ }
+
+ .formulario {
+     height: 10%;
+     display: flex;
+     justify-content: space-around;
+     background-color: lightseagreen;
+     color: white;
+     text-transform: uppercase;
+ }
+
+ .formulario div {
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+ }
+
+ .formulario div:last-child {
+     width: 20%;
+ }
+
+ button {
+     width: 100%;
+ }
+
+ li.propio {
+     color: purple;
+     align-self: flex-end;
+ }
